@@ -2,8 +2,8 @@ using Domain.DataContext;
 using Domain.Repositories;
 using Domain.Services;
 using Microsoft.EntityFrameworkCore;
-using WebApi.Infrastructure.CultureMiddleware;
-using WebApi.Infrastructure.ExceptionHandling;
+using CatalogApi.Infrastructure.CultureMiddleware;
+using CatalogApi.Infrastructure.ExceptionHandling;
 
 var builder = WebApplication.CreateBuilder(args);
 

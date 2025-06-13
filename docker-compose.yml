@@ -5,10 +5,10 @@ services:
       context: .
       dockerfile: AuthApi/Dockerfile
 
-  webapi:
-    image: ${DOCKER_REGISTRY-}webapi
+  CatalogApi:
+    image: ${DOCKER_REGISTRY-}CatalogApi
     build:
       context: .
-      dockerfile: WebApi/Dockerfile
+      dockerfile: CatalogApi/Dockerfile
     # depends_on: 'authApi'
 

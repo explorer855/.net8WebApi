@@ -13,11 +13,11 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["Directory.Packages.props", "."]
-COPY ["AuthApi/AuthApi.csproj", "AuthApi/"]
+COPY ["src/AuthApi/AuthApi.csproj", "src/AuthApi/"]
 COPY ["Domain/Domain.csproj", "Domain/"]
-RUN dotnet restore "./AuthApi/AuthApi.csproj"
+RUN dotnet restore "./src/AuthApi/AuthApi.csproj"
 COPY . .
-WORKDIR "/src/AuthApi"
+WORKDIR "/src/src/AuthApi"
 RUN dotnet build "./AuthApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage

@@ -2,7 +2,7 @@ using Domain.Entities;
 using Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApi.Controllers
+namespace CatalogApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

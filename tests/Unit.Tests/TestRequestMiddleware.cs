@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Http;
 using System.Globalization;
-using WebApi.Infrastructure.CultureMiddleware;
+using CatalogApi.Infrastructure.CultureMiddleware;
 
-namespace webapi.unit.tests
+namespace Unit.Tests
 {
     public class TestRequestMiddleware
     {

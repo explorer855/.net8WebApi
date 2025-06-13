@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 
-namespace WebApi.Infrastructure.CultureMiddleware;
+namespace CatalogApi.Infrastructure.CultureMiddleware;
 
 [ExcludeFromCodeCoverage]
 public class RequestCultureMiddleware

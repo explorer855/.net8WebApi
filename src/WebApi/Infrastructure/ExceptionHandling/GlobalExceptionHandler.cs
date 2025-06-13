@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Net.Mime;
 using System.Security.Cryptography;
 
-namespace WebApi.Infrastructure.ExceptionHandling
+namespace CatalogApi.Infrastructure.ExceptionHandling
 {
     [ExcludeFromCodeCoverage]
     public sealed class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger)

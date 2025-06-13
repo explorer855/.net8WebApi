@@ -14,8 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Build WebApi Docker image
-      run: docker build . --file src/WebApi/Dockerfile --tag webapi:$(date +%s)
+    - name: Build CatalogApi Docker image
+      run: docker build . --file src/CatalogApi/Dockerfile --tag catalogapi:$(date +%s)
 
     - uses: actions/checkout@v4
     - name: Build the Auth Api image

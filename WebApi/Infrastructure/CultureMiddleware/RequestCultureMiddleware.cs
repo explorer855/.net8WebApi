@@ -1,7 +1,9 @@
-﻿using System.Globalization;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
 
 namespace WebApi.Infrastructure.CultureMiddleware;
 
+[ExcludeFromCodeCoverage]
 public class RequestCultureMiddleware
 {
     private readonly RequestDelegate _next;

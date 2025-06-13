@@ -1,7 +1,7 @@
 ﻿using Domain.DataContext;
 using Domain.Entities;
 
-namespace Infrastructure.Repositories
+namespace Domain.Repositories
 {
     public class ProductRepository :
         Repository<Product>, IProductRepository

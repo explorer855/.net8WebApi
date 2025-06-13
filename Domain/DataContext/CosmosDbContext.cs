@@ -1,12 +1,15 @@
 ﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Domain.DataContext
 {
+
     /// <summary>
     /// Azure Cosmos DB Context
     /// for setting up Entities and its relationships
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CosmosDbContext : DbContext
     {
         public CosmosDbContext(DbContextOptions options) : base(options) { }

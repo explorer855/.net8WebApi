@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics.CodeAnalysis;
 using System.Net.Mime;
 using System.Security.Cryptography;
 
 namespace WebApi.Infrastructure.ExceptionHandling
 {
+    [ExcludeFromCodeCoverage]
     public sealed class GlobalExceptionHandler(ILogger<GlobalExceptionHandler> logger)
         : IExceptionHandler
     {

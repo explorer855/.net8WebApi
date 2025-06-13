@@ -22,10 +22,6 @@ namespace AuthApi
                   databaseName: "identity-db",
                   cosmosOptionsAction: options =>
                   {
-                      options.HttpClientFactory(() => new HttpClient(new HttpClientHandler()
-                      {
-                          ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
-                      }));
                       options.ConnectionMode(Microsoft.Azure.Cosmos.ConnectionMode.Gateway);
                       options.MaxRequestsPerTcpConnection(16);
                       options.MaxTcpConnectionsPerEndpoint(32);

@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Http;
 using System.Globalization;
 using WebApi.Infrastructure.CultureMiddleware;
 
-namespace webapi.unit.tests
+namespace WebApi.Unit.Tests
 {
     public class TestRequestMiddleware
     {

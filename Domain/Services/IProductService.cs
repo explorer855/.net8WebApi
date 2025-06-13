@@ -1,6 +1,6 @@
 ﻿using Domain.Entities;
 
-namespace Infrastructure.Services
+namespace Domain.Services
 {
     public interface IProductService
     {

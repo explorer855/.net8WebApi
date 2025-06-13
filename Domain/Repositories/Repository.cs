@@ -1,7 +1,7 @@
 ﻿using Domain.DataContext;
 using Domain.Entities;
 
-namespace Infrastructure.Repositories
+namespace Domain.Repositories
 {
     public abstract class Repository<TEntity>
         where TEntity : Entity

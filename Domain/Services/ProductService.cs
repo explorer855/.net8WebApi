@@ -1,7 +1,7 @@
 ﻿using Domain.Entities;
-using Infrastructure.Repositories;
+using Domain.Repositories;
 
-namespace Infrastructure.Services
+namespace Domain.Services
 {
     public class ProductService
         : IProductService

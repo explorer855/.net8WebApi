@@ -1,6 +1,6 @@
 using Domain.DataContext;
-using Infrastructure.Repositories;
-using Infrastructure.Services;
+using Domain.Repositories;
+using Domain.Services;
 using Microsoft.EntityFrameworkCore;
 using WebApi.Infrastructure.CultureMiddleware;
 using WebApi.Infrastructure.ExceptionHandling;
@@ -42,7 +42,6 @@ app.UseHttpsRedirection();
 app.UseMiddleware<RequestCultureMiddleware>();
 
 app.UseAuthorization();
-
 
 app.MapControllers();
 

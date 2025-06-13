@@ -1,8 +1,8 @@
-﻿using Domain.Entities;
+﻿using CatalogApi.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Domain.DataContext
+namespace CatalogApi.Data
 {
 
     /// <summary>
@@ -10,9 +10,9 @@ namespace Domain.DataContext
     /// for setting up Entities and its relationships
     /// </summary>
     [ExcludeFromCodeCoverage]
-    public class CosmosDbContext : DbContext
+    public class CatalogDbContext : DbContext
     {
-        public CosmosDbContext(DbContextOptions options) : base(options) { }
+        public CatalogDbContext(DbContextOptions options) : base(options) { }
 
         public DbSet<Product> Products { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }

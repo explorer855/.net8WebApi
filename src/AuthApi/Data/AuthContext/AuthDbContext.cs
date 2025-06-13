@@ -1,17 +1,16 @@
 ﻿using AspNetCore.Identity.CosmosDb;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Domain.DataContext
+namespace AuthApi.Data.AuthDbContext
 {
     /// <summary>
     /// Azure Cosmos DB Context
     /// for setting up Entities and its relationships
     /// </summary>
     [ExcludeFromCodeCoverage]
-    public class AuthDbContext : CosmosIdentityDbContext<IdentityUser, IdentityRole, string>
+    internal class AuthDbContext : CosmosIdentityDbContext<IdentityUser, IdentityRole, string>
     {
         public AuthDbContext(DbContextOptions options) : base(options) { 
         }

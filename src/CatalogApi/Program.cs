@@ -1,13 +1,13 @@
-using Domain.DataContext;
+using CatalogApi.Data;
+using CatalogApi.Infrastructure.CultureMiddleware;
+using CatalogApi.Infrastructure.ExceptionHandling;
 using Domain.Repositories;
 using Domain.Services;
 using Microsoft.EntityFrameworkCore;
-using CatalogApi.Infrastructure.CultureMiddleware;
-using CatalogApi.Infrastructure.ExceptionHandling;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContextFactory<CosmosDbContext>(optionsBuilder =>
+builder.Services.AddDbContextFactory<CatalogDbContext>(optionsBuilder =>
   optionsBuilder
     .UseCosmos(
       connectionString: builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -24,7 +24,7 @@ builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<CosmosDbContext>();
+builder.Services.AddScoped<CatalogDbContext>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 

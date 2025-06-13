@@ -8,17 +8,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Packages.props = Directory.Packages.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{AD114284-43C9-42F1-9AD6-FCAFB43764BA}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{A0AAC013-0DF2-44FF-A625-3F361C89C065}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{EB9B82A4-7E57-4959-81CC-EA0CFE7B9715}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogApi", "src\WebApi\CatalogApi.csproj", "{1B0A04C3-E6BC-0FB7-7994-7C99BDAB1788}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogApi", "src\CatalogApi\CatalogApi.csproj", "{1B0A04C3-E6BC-0FB7-7994-7C99BDAB1788}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthApi", "src\AuthApi\AuthApi.csproj", "{B080CB40-7A2E-DA7A-BEB8-4707E193B2BD}"
 EndProject
@@ -30,18 +26,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AD114284-43C9-42F1-9AD6-FCAFB43764BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD114284-43C9-42F1-9AD6-FCAFB43764BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD114284-43C9-42F1-9AD6-FCAFB43764BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD114284-43C9-42F1-9AD6-FCAFB43764BA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A0AAC013-0DF2-44FF-A625-3F361C89C065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A0AAC013-0DF2-44FF-A625-3F361C89C065}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0AAC013-0DF2-44FF-A625-3F361C89C065}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0AAC013-0DF2-44FF-A625-3F361C89C065}.Release|Any CPU.Build.0 = Release|Any CPU
-		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1B0A04C3-E6BC-0FB7-7994-7C99BDAB1788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1B0A04C3-E6BC-0FB7-7994-7C99BDAB1788}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B0A04C3-E6BC-0FB7-7994-7C99BDAB1788}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -59,7 +47,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{AD114284-43C9-42F1-9AD6-FCAFB43764BA} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{A0AAC013-0DF2-44FF-A625-3F361C89C065} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{1B0A04C3-E6BC-0FB7-7994-7C99BDAB1788} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{B080CB40-7A2E-DA7A-BEB8-4707E193B2BD} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}

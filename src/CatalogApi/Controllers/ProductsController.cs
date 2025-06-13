@@ -1,4 +1,4 @@
-using Domain.Entities;
+using CatalogApi.Data.Entities;
 using Domain.Services;
 using Microsoft.AspNetCore.Mvc;
 

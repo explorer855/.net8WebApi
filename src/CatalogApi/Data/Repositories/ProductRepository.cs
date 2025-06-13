@@ -1,12 +1,13 @@
-﻿using Domain.DataContext;
-using Domain.Entities;
+﻿using CatalogApi.Data;
+using CatalogApi.Data.Entities;
+using CatalogApi.Data.Repositories;
 
 namespace Domain.Repositories
 {
     public class ProductRepository :
         Repository<Product>, IProductRepository
     {
-        public ProductRepository(CosmosDbContext dbContext)
+        public ProductRepository(CatalogDbContext dbContext)
             : base(dbContext) { }
 
         public async Task<Product?> Add(Product product)

@@ -1,4 +1,4 @@
-﻿using Domain.Entities;
+﻿using CatalogApi.Data.Entities;
 
 namespace Domain.Repositories
 {

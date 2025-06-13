@@ -19,8 +19,4 @@
     <PackageReference Include="Newtonsoft.Json" />
     <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\Domain\Domain.csproj" />
-  </ItemGroup>
 </Project>

@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\AuthApi\AuthApi.csproj" />
-    <ProjectReference Include="..\..\src\WebApi\CatalogApi.csproj" />
+    <ProjectReference Include="..\..\src\CatalogApi\CatalogApi.csproj" />
   </ItemGroup>
 
   <ItemGroup>

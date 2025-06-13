@@ -14,7 +14,6 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["Directory.Packages.props", "."]
 COPY ["src/CatalogApi/CatalogApi.csproj", "src/CatalogApi/"]
-COPY ["Domain/Domain.csproj", "Domain/"]
 RUN dotnet restore "./src/CatalogApi/CatalogApi.csproj"
 COPY . .
 WORKDIR "/src/src/CatalogApi"

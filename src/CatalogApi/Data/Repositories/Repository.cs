@@ -1,14 +1,13 @@
-﻿using Domain.DataContext;
-using Domain.Entities;
+﻿using CatalogApi.Data.Entities;
 
-namespace Domain.Repositories
+namespace CatalogApi.Data.Repositories
 {
     public abstract class Repository<TEntity>
         where TEntity : Entity
     {
-        public readonly CosmosDbContext _context;
+        public readonly CatalogDbContext _context;
 
-        protected Repository(CosmosDbContext context)
+        protected Repository(CatalogDbContext context)
         {
             _context = context;
         }

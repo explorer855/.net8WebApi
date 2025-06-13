@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities
+﻿namespace CatalogApi.Data.Entities
 {
     public abstract class Entity
     {

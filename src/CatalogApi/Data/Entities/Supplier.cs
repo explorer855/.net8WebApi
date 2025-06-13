@@ -1,6 +1,6 @@
 ﻿using Microsoft.Azure.Cosmos;
 
-namespace Domain.Entities
+namespace CatalogApi.Data.Entities
 {
     public class Supplier
     {

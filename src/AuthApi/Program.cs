@@ -1,8 +1,7 @@
 
 using AspNetCore.Identity.CosmosDb.Extensions;
-using Domain.DataContext;
+using AuthApi.Data.AuthDbContext;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Azure.Cosmos;
 using Microsoft.EntityFrameworkCore;
 
 namespace AuthApi
